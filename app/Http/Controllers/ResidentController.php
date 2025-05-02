@@ -25,7 +25,7 @@ class ResidentController extends Controller
     
     public function store(Request $request){
         $validatedData = $request->validate([
-            'nik' => ['required', 'min:7', 'max:16'],
+            'nik' => ['required', 'min:16', 'max:16'],
             'name' => ['required', 'max:100'],
             'gender' => ['required', Rule::in(['male', 'female'])],
             'birth_date' => ['required', 'string'],
@@ -55,7 +55,7 @@ class ResidentController extends Controller
     
     public function update(Request $request, $id){
         $validatedData = $request->validate([
-            'nik' => ['required', 'max:16'],
+            'nik' => ['required', 'min:16', 'max:16'],
             'name' => ['required', 'max:100'],
             'gender' => ['required', Rule::in(['male', 'female'])],
             'birth_date' => ['required', 'string'],
