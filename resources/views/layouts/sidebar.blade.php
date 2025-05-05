@@ -6,7 +6,7 @@
             <!-- Icon -->
             <img src="{{asset('')}}" style="width: 45px; height: auto;" alt="">
         </div>
-        <div class="sidebar-brand-text mx-3">DesaKu Meily</div>
+        <div class="sidebar-brand-text mx-3">DesaKu Erma</div>
     </a>
 
     <!-- Divider -->
